@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container-recap {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 20%;
+        overflow: auto;
+        width: 50vw;
+        height: 250px;
+      }
+      table {
+        table-layout: fixed;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid #000;
+        width: 100px;
+      }
+      th {
+        background-color: aqua;
+      }
+      .no-th {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: yellow;
+        text-align: center;
+      }
+      .name-th {
+        position: sticky;
+        top: 0;
+        left: 103px;
+        z-index: 1;
+        background-color: yellow;
+        text-align: center;
+      }
+      .izin-th {
+        position: sticky;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        background-color: aquamarine;
+        text-align: center;
+      }
+      .hadir-th {
+        position: sticky;
+        top: 0;
+        right: 103px;
+        z-index: 1;
+        background-color: aquamarine;
+        text-align: center;
+      }
+      .no-td {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+        background: whitesmoke;
+        color: black;
+        text-align: center;
+      }
+      .name-td {
+        position: sticky;
+        left: 103px;
+        z-index: 1;
+        background: whitesmoke;
+        color: black;
+        text-align: center;
+      }
+      .izin-td {
+        position: sticky;
+        right: 0;
+        z-index: 1;
+        background: whitesmoke;
+        color: black;
+        text-align: center;
+      }
+      .hadir-td {
+        position: sticky;
+        right: 103px;
+        z-index: 1;
+        background: whitesmoke;
+        color: black;
+        text-align: center;
+      }
+      .no-th,
+      .name-th,
+      .hadir-th,
+      .izin-th {
+        z-index: 3;
+      }
+      .th-th {
+        position: sticky;
+        top: 0;
+      }
+      .th-th-th {
+        position: sticky;
+        top: 23px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-recap">
+      <table>
+        <thead>
+          <tr>
+            <th rowspan="2" class="no-th">No.</th>
+            <th rowspan="2" class="name-th">Nama Murid</th>
+            <th colspan="2" class="th-th">First Th</th>
+            <th colspan="2" class="th-th">Second Th</th>
+            <th colspan="2" class="th-th">Third Th</th>
+            <th colspan="2" class="th-th">Forth Th</th>
+            <th colspan="2" class="th-th">Fifth Th</th>
+            <th rowspan="2" class="hadir-th">Hadir</th>
+            <th rowspan="2" class="izin-th">Izin</th>
+          </tr>
+
+          <tr>
+            <th class="th-th-th">Start</th>
+            <th class="th-th-th">End</th>
+            <th class="th-th-th">Start</th>
+            <th class="th-th-th">End</th>
+            <th class="th-th-th">Start</th>
+            <th class="th-th-th">End</th>
+            <th class="th-th-th">Start</th>
+            <th class="th-th-th">End</th>
+            <th class="th-th-th">Start</th>
+            <th class="th-th-th">End</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class="no-td">1.</td>
+            <td class="name-td">John Ddoe</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td class="hadir-td">1</td>
+            <td class="izin-td">1</td>
+          </tr>
+          <tr>
+            <td class="no-td">2.</td>
+            <td class="name-td">John Ddoe</td>
+            <td>12.00</td>
+            <td>14.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td class="hadir-td">2</td>
+            <td class="izin-td">2</td>
+          </tr>
+          <tr>
+            <td class="no-td">3.</td>
+            <td class="name-td">John Ddoe</td>
+            <td>12.00</td>
+            <td>14.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td class="hadir-td">2</td>
+            <td class="izin-td">2</td>
+          </tr>
+          <tr>
+            <td class="no-td">4.</td>
+            <td class="name-td">John Ddoe</td>
+            <td>12.00</td>
+            <td>14.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td class="hadir-td">2</td>
+            <td class="izin-td">2</td>
+          </tr>
+          <tr>
+            <td class="no-td">5.</td>
+            <td class="name-td">John Ddoe</td>
+            <td>12.00</td>
+            <td>14.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td class="hadir-td">2</td>
+            <td class="izin-td">2</td>
+          </tr>
+          <tr>
+            <td class="no-td">6.</td>
+            <td class="name-td">John Ddoe</td>
+            <td>12.00</td>
+            <td>14.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td class="hadir-td">2</td>
+            <td class="izin-td">2</td>
+          </tr>
+          <tr>
+            <td class="no-td">7.</td>
+            <td class="name-td">John Ddoe</td>
+            <td>12.00</td>
+            <td>14.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td class="hadir-td">2</td>
+            <td class="izin-td">2</td>
+          </tr>
+          <tr>
+            <td class="no-td">8.</td>
+            <td class="name-td">John Ddoe</td>
+            <td>12.00</td>
+            <td>14.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td class="hadir-td">2</td>
+            <td class="izin-td">2</td>
+          </tr>
+          <tr>
+            <td class="no-td">9.</td>
+            <td class="name-td">John Ddoe</td>
+            <td>12.00</td>
+            <td>14.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td class="hadir-td">2</td>
+            <td class="izin-td">2</td>
+          </tr>
+          <tr>
+            <td class="no-td">10.</td>
+            <td class="name-td">John Ddoe</td>
+            <td>12.00</td>
+            <td>14.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td>10.00</td>
+            <td>12.00</td>
+            <td class="hadir-td">2</td>
+            <td class="izin-td">2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
